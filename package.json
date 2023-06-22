@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "eslint": "^8.42.0",
+    "standard": "^17.1.0"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json"
+  },
+  "dependencies": {
+    "eslint-config-semistandard": "^17.0.0",
+    "eslint-config-standard": "^17.1.0"
+  }
+}

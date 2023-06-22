@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+</head>
+<body>
+    <img class="logo" src="images/Logo@2x.png">
+    <input type="text" id="textToEncrypt" class="input-padron" pattern="[a-z]*" title="Solo letras minúsculas y sin acentos" required placeholder="Ingrese el texto aqui">
+    <div class="zoneOnlyLowerCase">
+        <img src="images/exclamacion.png">
+        <span class="textOnlyLowerCase">Solo letras minúsculas y sin acentos</span>
+    </div>
+    <div class="botonesEncriptaDesencriptar">
+        <button id="btnEncrypt" class="buttonToEncrypt" onclick="encrypt()"><span>Encriptar</span></button>
+        <button id="btnDecrypt" class="buttonToDecrypt" onclick="decrypt()"><span>Desencriptar</span></button>
+    </div>
+    <div id="encryptZone" class="encryptZone">
+        <img class="muñeco" src="images/Muñeco.png">
+        <div class="ningunTexto">
+            <span>Ningun Texto fue encontrado</span> 
+            <span id="texto2">Ingresa el texto que desees encriptar o desencriptar.</span> 
+        </div>
+    </div>
+
+    <script src='js/main.js'></script>
+</body>
+</html>
