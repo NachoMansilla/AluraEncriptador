@@ -303,6 +303,11 @@ button:disabled {
 
 }
 
+.showTextEncrypted:focus-visible{
+    border: none;
+    outline: none;
+}
+
 
 #btnCopy{
     box-sizing: border-box;
