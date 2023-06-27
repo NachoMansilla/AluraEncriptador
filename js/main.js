@@ -1,5 +1,3 @@
-
-
 var clipboard = new ClipboardJS('#btnCopy');
 
 const dicLetterTo = {
