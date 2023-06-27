@@ -1,32 +1,34 @@
 body{
     background: #F3F5FC;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    
 
 }
 
 #logo{
     width: 7.5rem;
     height: 3rem;
-    display: block;
+    display: flex;
     position: relative;
     top: 2.5rem;
     left: 2.5rem;
+    bottom: 10%;
+    margin: 1%;
 
 }
-.logo{
-    width: 7.5rem;
-    height: 3rem;
-}
+
 
 .container{
     
     width: 50%;
-    height: 80%;
+    height: 80vh;
     position: relative;
-    margin: 2%;
+    margin: 1% 5% 1%;
 
-    padding: 2%;
+    padding: 2% 2% 1% 2%;
     display: inline-block;
 
 }
@@ -126,11 +128,10 @@ button:disabled {
 .buttonToDecrypt{
     flex-direction: row;
     align-items: flex-start;
-    padding: 24px;
-    gap: 8px;
+    padding: 2%;
 
     width: 40%;
-    height: 67px;
+    height: 8vh;
 
     flex: none;
     order: 0;
@@ -141,7 +142,7 @@ button:disabled {
 }
 
 .buttonToEncrypt span{
-    width: 280px;
+    width: 30%;
     height: 19px;
 
     font-family: 'Inter';
@@ -171,7 +172,7 @@ button:disabled {
 
 .buttonToDecrypt span{
     width: 10%;
-    height: 19px;
+    height: 10%;
 
     font-family: 'Inter';
     font-style: normal;
@@ -202,8 +203,8 @@ button:disabled {
     background-color: #FFF;
     border-radius: 32px;
     display: inline-block;
-    margin: 2%;
-    max-width: 25rem;
+    margin-bottom: 2%;
+    max-width: 20rem;
     padding: 2%;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
 }
@@ -225,12 +226,13 @@ button:disabled {
 .ningunTexto span{
     width: 100%;
     height: 5%;
+    margin-bottom: 1rem;
 
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
-    line-height: 120%;
+    line-height: 100%;
     /* or 29px */
 
     text-align: center;
@@ -251,13 +253,13 @@ button:disabled {
 }
 .ningunTexto span#texto2{
     width: 100%;
-    height: 48px;
+    height: 50%;
 
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 150%;
+    line-height: 100%;
     /* or 24px */
 
     text-align: center;
@@ -280,7 +282,10 @@ button:disabled {
 .showTextEncrypted{
     position: relative;
     width: 90%;
+    height: 85%;
     margin: 5%;
+    resize: none;
+    border: none;
     
     font-family: 'Inter';
     font-style: normal;
@@ -312,7 +317,8 @@ button:disabled {
     gap: 8px;
 
     position: relative;
-    margin-top: 70vh;
+    margin-bottom: 10%;
+    margin-top: 1%;
     margin-left: 20%;
     margin-right: 20%;
 
@@ -368,4 +374,47 @@ button:disabled {
 
 .vibrate-and-highlight {
     animation: vibrate 1s, highlight 1s;
+}
+
+
+@media (max-width: 768px) {
+    #logo{
+        transition: 500ms all;
+        left: 0;
+        margin-left: 5%;
+        margin-bottom: 10%;
+    }
+    .container{
+        transition: 500ms all;
+        height: 60vh;
+    }
+    .input-padron{
+        left: 0;
+        margin-left: 5%;
+    }
+    .container{
+        width: 100%;
+        margin: 0;
+        padding: 0%;
+    }
+    .botonesEncriptaDesencriptar{
+        left: 0;
+        margin: 0;
+        text-align: center;
+    }
+    .encryptZone{
+        transition: 500ms all;
+        position: relative;
+        display: block;
+        margin: 5%;
+        width: 85%;
+        max-width: none;
+        height: 100%;
+
+    }
+    .muñeco{
+        display: none;
+        
+    }
+
 }

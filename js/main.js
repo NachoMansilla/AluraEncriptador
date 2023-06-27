@@ -18,10 +18,10 @@ for (let key in dicLetterTo) {
 
 
 const encryptZone = document.getElementById('encryptZone');
-const span = document.createElement('span');
+const textarea = document.createElement('textarea');
 
-span.className = 'showTextEncrypted';
-span.id = 'textForCopy';
+textarea.className = 'showTextEncrypted';
+textarea.id = 'textForCopy';
 
 function createBtn() {
   const btn = document.createElement('button');
@@ -69,24 +69,24 @@ function encrypt() {
 
   }
 
-  span.textContent = textEncrypted;
+  textarea.textContent = textEncrypted;
   encryptZone.textContent = '';
-  encryptZone.appendChild(span);
+  encryptZone.appendChild(textarea);
   createBtn();
 
 }
 
 function decrypt() {
   const userText = document.getElementById('textToEncrypt').value;
-  const span = document.createElement('span');
+  const textarea = document.createElement('textarea');
   let newText = userText;
   for (let char in dicTextTo) {
     newText = newText.replaceAll(char, dicTextTo[char]);
-    span.textContent = newText;
-    span.className = 'showTextEncrypted';
-    span.id = 'textForCopy';
+    textarea.textContent = newText;
+    textarea.className = 'showTextEncrypted';
+    textarea.id = 'textForCopy';
     encryptZone.textContent = '';
-    encryptZone.appendChild(span);
+    encryptZone.appendChild(textarea);
 
   }
   createBtn();
