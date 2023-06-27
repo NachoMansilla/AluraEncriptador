@@ -12,20 +12,24 @@
     <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
 </head>
 <body>
-    <img class="logo" src="images/Logo@2x.png">
-    <input type="text" id="textToEncrypt" class="input-padron" pattern="[a-z]*" title="Solo letras minúsculas y sin acentos" required placeholder="Ingrese el texto aqui">
-    <div class="zoneOnlyLowerCase">
-        <img src="images/exclamacion.png">
-        <span class="textOnlyLowerCase">Solo letras minúsculas y sin acentos</span>
+    <div id="logo">
+        <img class="logo" src="images/Logo@2x.png">
     </div>
-    <div class="botonesEncriptaDesencriptar">
-        <button id="btnEncrypt" class="buttonToEncrypt" onclick="encrypt()"><span>Encriptar</span></button>
-        <button id="btnDecrypt" class="buttonToDecrypt" onclick="decrypt()"><span>Desencriptar</span></button>
-    </div>
+    <section class="container">
+        <textarea id="textToEncrypt" class="input-padron" style="height: 70%; width: 90%;" pattern="[a-z]*" placeholder="Ingrese el texto aqui"></textarea>
+        <div class="zoneOnlyLowerCase">
+            <img src="images/exclamacion.png">
+            <span class="textOnlyLowerCase">Solo letras minúsculas y sin acentos</span>
+        </div>
+        <div class="botonesEncriptaDesencriptar">
+            <button id="btnEncrypt" class="buttonToEncrypt" onclick="encrypt()"><span>Encriptar</span></button>
+            <button id="btnDecrypt" class="buttonToDecrypt" onclick="decrypt()"><span>Desencriptar</span></button>
+        </div>
+    </section>
     <div id="encryptZone" class="encryptZone">
         <img class="muñeco" src="images/Muñeco.png">
         <div class="ningunTexto">
-            <span>Ningun Texto fue encontrado</span> 
+            <span>Ningún mensaje fue encontrado</span> 
             <span id="texto2">Ingresa el texto que desees encriptar o desencriptar.</span> 
         </div>
     </div>
